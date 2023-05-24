@@ -1,9 +1,9 @@
 import loginImage from "../../assets/images/login.svg";
-import Illustration from "../Signup/Illustration";
-import Form from "../Signup/Form";
 import classes from "../../styles/Login.module.css";
-import TextInput from "../Input/TextInput";
 import Button from "../Input/Button";
+import TextInput from "../Input/TextInput";
+import Form from "../Signup/Form";
+import Illustration from "../Signup/Illustration";
 
 export default function Login() {
   return (
@@ -13,13 +13,19 @@ export default function Login() {
         <Illustration src={loginImage} alt="Login" />
 
         <Form className={`${classes.login}`}>
-            <TextInput type="text" placeholder="Enter email" icon="alternate_email"/>
-            
-            <TextInput type="password" placeholder="Enter password" icon="lock"/>
+          <TextInput
+            type="text"
+            placeholder="Enter email"
+            icon="alternate_email"
+          />
 
-            <Button>Submit now</Button>
+          <TextInput type="password" placeholder="Enter password" icon="lock" />
 
-            <div className="info">
+          <Button>
+            <span>Submit now</span>
+          </Button>
+
+          <div className="info">
             Don't have an account? <a href="signup.html">Signup</a> instead.
           </div>
         </Form>
