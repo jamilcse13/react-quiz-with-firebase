@@ -1,5 +1,5 @@
-import image from "../assets/images/3.jpg";
-import classes from "../styles/Video.module.css";
+import image from "../../assets/images/3.jpg";
+import classes from "../../styles/Video.module.css";
 
 export default function Video() {
   return (
