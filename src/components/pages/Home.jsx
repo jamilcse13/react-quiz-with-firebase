@@ -1,6 +1,6 @@
-import Video from "../Homepage/Videos"
+import Videos from "../Homepage/Videos"
 export default function Home() {
   return (
-    <Video />
+    <Videos />
   )
 }
